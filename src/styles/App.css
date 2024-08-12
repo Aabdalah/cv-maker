@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef1f3;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 15px 10px;
+    -webkit-print-color-adjust: exact; 
+}
+.app{
+    width: 800px;
+    background-color: white;
+}
+@media (max-width:1200px) {
+    .app{
+        width: 800px;
+    }
+}
+@media (max-width:997px) {
+    .app{
+        width: 768px;
+    }
+}
+@media (max-width:790px) {
+    .app{
+        width: 600px;
+    }
+}
+
+/*personal info start*/
+.personal-info{
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: #0e374e;
+    color: white;
+}
+.personal-info div div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.personal-info div h1{
+    margin: 10px 0;
+}
+.personal-info div div span{
+    margin-left: 5px;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #7a7b7b;
+    border: 2px solid #bebfbf;
+    font-weight: bold;
+}
+button:last-of-type{
+    background-color: #4ca8df;
+    color: white;
+    border: none;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    
+}
+/*personal info end*/
+/*education start*/
+.education,.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 10px 10px;
+    gap: 20px;
+}
+.experience{
+    padding: 10px 10px 45px;
+}
+.education h2,.experience h2{
+    width: 80%;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #eef1f3;
+}
+.education .display,.experience .display{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width:576px) {
+    .education .display,.experience .display{
+        width: 100%;
+    }
+}
+.education .edit-education,.experience .edit-experience{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+}
+.education .edit-education input,.experience .edit-experience input{
+    width: calc(50% - 20px);
+    margin: 5px 10px;
+}
+@media (max-width:790px) {
+    .education .edit-education,.experience .edit-experience{
+        width: 100%;
+    }
+    .education .edit-education input,.experience .edit-experience input{
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width:576px) {
+    .education .edit-education input,.experience .edit-experience input{
+        width: 90%;
+    }
+}
+.experience .edit-experience textarea{
+    width: 100%;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    resize: none;
+    border-radius: 5px;
+}
+.education span,.experience span{
+    margin-left: 5px;
+}
+/*education end*/
+/*experience start*/
+.experience{
+
+}
+/*experience end*/
+.hidden{
+    display: none !important;
+}
+@media (max-width:600px) {
+    .app{
+        width: 100%;
+    }
+    .display,.display div{
+        flex-direction: column;
+    }
+}
+
+@media print{
+    button{
+        display: none;
+    }
+}
